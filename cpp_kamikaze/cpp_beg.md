@@ -157,24 +157,195 @@ C++ для новичков.
 * Операторы и управляющие конструкции языка
 * Системы сборки, поставки и развёртывания
 
+```Работа с каждым языком начинаеся с Hello World!```
+
 ---
-### Главный принцип С++
+### Пишем HELLOWORLD на С++
+
+<span style="font-size:23px">
+
+* http://cpp.sh/
+
+```
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string name;
+  std::cout << "What is your name? ";
+  getline (std::cin, name);
+  std::cout << "Welcome to C++, " << name << "!\n";
+}
+```
+
+Просто и понятно.
+Но хочется большего.
+
+---
+### Пишем HELLOWORLD на С++
+
+<span style="font-size:23px">
+
+
+```
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string name;
+  std::cout << "What is your name? ";
+  getline (std::cin, name);
+  std::cout << "Welcome to C++, " << name << "!\n"; <<=== Хотим имя БОЛЬШИМИ буквами!
+}
+```
+* Ищем функцию ...
 <div align="center">
-<img src="UB.jpg" width="30%" height="30%">
+<img src="toupper.png" width="100%" height="100%">
+</div>
+*Класс! сейчас сделаем!
+
+---
+##### Пишем HELLOWORLD на С++
+
+<span style="font-size:20px">
+
+```
+#include <iostream>
+#include <string>
+#include <cctype>
+
+int main()
+{
+  std::string name;
+  std::cout << "What is your name? ";
+  getline (std::cin, name);
+  int i = 0;
+  std::cout << "Hello, " << char(toupper( name[i++] )) 
+                         << char(toupper( name[i++] )) 
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << " !"
+                         << std::endl;
+}
+```
+
+---
+##### Пишем HELLOWORLD на С++
+
+<span style="font-size:20px">
+
+```
+#include <iostream>
+#include <string>
+#include <cctype>
+
+int main()
+{
+  std::string name;
+  std::cout << "What is your name? ";
+  getline (std::cin, name);
+  int i = 0;
+  std::cout << "Hello, " << char(toupper( name[i++] )) 
+                         << char(toupper( name[i++] )) 
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << char(toupper( name[i++] ))
+                         << " !"
+                         << std::endl;
+
+}
+```
+
+---
+### Первый прогон!
+<div align="center">
+<img src="hwrun_1.png" width="100%">
+</div>
+
+---
+### Первый прогон!
+<div align="center">
+<img src="hwrun_2.png" width="100%">
+</div>
+
+---
+### Первый прогон!
+<div align="center">
+<img src="wtf_pinup.jpg" width="100%">
+</div>
+
+---
+### Первый прогон!
+<div align="center">
+<img src="hwrun_3.png" width="100%">
+</div>
+
+---
+#### Главный принцип работы программы С++
+<div align="center">
+<img src="UB.jpg" width="70%" height="50%">
 </div>
 
 ##### Неопределённое поведение.
 <span style="font-size:23px">
 
-
+---
+#### Когда это случилось?
+##### Не было ничего сложного!
+* ни сложных, многофайловых проектов
+* ни безумных конструкций препроцессора
+* ни сложных математических опрераций
+* ни адского темплейтного метапрограммирования
+	* ЭТО ВООБЩЕ ДЕТСКИЙ КОД! 
+* такое можно было бы писать в школе!
 
 ---
-### С чего н
+### Неопределённое поведение.
+<span style="font-size:23px">
 
-![Image](dont.jpg)
+#### Что же это такое?
+* Что говорит стандарт ANSI/ISO?
+
+``` text
+1.3.24 undefined behavior 
+behavior for which this International Standard imposes no requirements
+```
+вроде не страшно...
+* Что говорит cpprefecence?
+``` text
+Renders the entire program meaningless if certain rules of the language are violated.
+```
+* Так что, вся моя программа неправильная?
 
 ---
+### Неопределённое поведение.
+<span style="font-size:30px">
 
+#### Что же это такое?
+
+_undefined behavior_ - there are **no restrictions on the behavior of the program**. Compilers are **not required to diagnose undefined behavior** (although many simple situations are diagnosed), and the compiled program is **not required to do anything meaningful**. 
+
+---
+### Самый главный слайд.
+<span style="font-size:45px">
+
+#### UB значит
+
+* Неизвестность
+* Помощи не будет !
+<div align="center">
+<img src="syl.jpg" width="25%" height="10%">
+</div>
 
 ----
 # Подводим итоги ...
@@ -189,5 +360,13 @@ C++ для новичков.
 ---
 Литература
 ===========================================
+* https://ru.cppreference.com
+* https://github.com/CppCon/CppCon2017
+* https://isocpp.org/blog
 
-* 
+---
+### Конец
+
+<div align="center">
+<img src="stop.png" width="60%" height="1400%">
+</div>
