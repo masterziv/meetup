@@ -337,15 +337,25 @@ _undefined behavior_ - there are **no restrictions on the behavior of the progra
 
 ---
 ### Самый главный слайд.
-<span style="font-size:45px">
+<span style="font-size:38px">
 
 #### UB значит
 
 * Неизвестность
 * Помощи не будет !
+* Ты один, а вокруг опасность!
 <div align="center">
 <img src="syl.jpg" width="25%" height="10%">
 </div>
+
+---
+### Типы данных
+<span style="font-size:25px">
+Предположим, вы не испупгались UB...
+
+Какие типы данных в распоряжении программиста С/С++?
+
+
 
 ----
 # Подводим итоги ...
@@ -363,6 +373,7 @@ _undefined behavior_ - there are **no restrictions on the behavior of the progra
 * https://ru.cppreference.com
 * https://github.com/CppCon/CppCon2017
 * https://isocpp.org/blog
+* https://github.com/masterziv/meetup.git
 
 ---
 ### Конец
