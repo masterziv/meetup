@@ -68,7 +68,23 @@ C++ для новичков.
 
 <p style="color:red">Изучу его - буду богом!</p>
 </div>
-	
+
+---
+###### Кто и зачем изучает С/С++
+<span style="font-size:27px">
+<div align="center"><img src="poll_1_whoami.png" width="70%">
+
+<p style="color:black">Результаты опросов</p>
+</div>
+
+---
+###### Кто и зачем изучает С/С++
+<span style="font-size:27px">
+<div align="center"><img src="poll_2_cpp_res.png" width="80%">
+
+<p style="color:black">Результат</p>
+</div>
+
 ---
 ###### Кто и зачем изучает С/С++
 <span style="font-size:20px">
