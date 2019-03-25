@@ -674,6 +674,23 @@ THE QUICK BROWN FOX JUMPS OVER A LAZY DOG
 * Надо проверять код, как в результате всё получилось.
 
 ---
+### Проверять каждую строчку!
+<div align="left">
+<img src="tools2.jpg" width="25%" height="1400%">
+</div>
+
+#### Инструменты для выявления ошибок.
+
+<span style="font-size:24px">
+
+* Старая добрая отладочная печать.
+	* После каждого ввода данных очень хорошо их тут же распечатать, чтобы выявить ошибки ввода.
+	* В важных местах работы программы можно распечатать промежуточные итоги.
+* **assert** -- встроенные проверки на правильность.
+* Отладчики и пошаговое выполнение.
+* Статические анализаторы кода (в том числе в IDE)
+
+---
 ### Подводим итоги ...
 <span style="font-size:24px">
 
@@ -696,6 +713,7 @@ THE QUICK BROWN FOX JUMPS OVER A LAZY DOG
 * https://ru.cppreference.com
 * https://github.com/CppCon/CppCon2017
 * https://isocpp.org/blog
+* https://habr.com/ru/post/141080/ - Об assert
 * https://github.com/masterziv/meetup.git
 * https://t-do.ru//ProCxx или @procxx
 * https://t-do.ru//supapro или @supapro
